@@ -16,21 +16,59 @@
     Google Maps with AGM in Angular
   </h1>
 </div>
-<!-- <h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul> -->
 
-<agm-map [latitude]="lat" [longitude]="lng">
+<div #mapContainer id="map">
+  
+  <!-- <agm-info-window>
+    <div class="card agm-info-card">
+      <div class="card-header">
+        <h5> <i class="fa fa-info-circle"></i> Infos</h5>
+      </div>
+
+      <div class="card-body">
+        <table class="table table-borderless table-sm">
+          <tbody>
+            <tr>
+              <td>Encomendas Selecionadas</td>
+              <th scope="row"> <span style="color: green;"> 2 </span></th>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card agm-info-card">
+      <div class="card-header">
+        <h5> <i class="fa fa-car"></i> Giro </h5>
+      </div>
+
+      <div class="card-body">
+        <table class="table tb-borderT-none table-sm">
+          <tbody clas>
+            <tr>
+              <td>Cliente</td>
+              <td class="text-bold"> Coxe Bernardo</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <hr>
+
+        <button *ngIf="m.planeamento_id == null || editarPlaneamento == true " type="button"
+          class="btn btn-link btn-outline-default btn-xs pull-right" data-dismiss="modal"
+          (click)="getProdutosEncomenda(m);">
+          Selecionar Encomenda
+        </button>
+      </div>
+    </div>
+  </agm-info-window> -->
+
+
+</div>
+
+<!-- <agm-map [latitude]="lat" [longitude]="lng">
   <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-</agm-map>
+</agm-map> -->
 
 <router-outlet></router-outlet>
